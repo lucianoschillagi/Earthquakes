@@ -23,7 +23,7 @@ extension QuakeError: LocalizedError {
             )
         case .networkError:
             return NSLocalizedString(
-                "Network error...",
+                "Network error...", // TODO: improve this message
                 comment: ""
             )
         }
