@@ -9,7 +9,7 @@
 import Foundation
 
 let validStatus = 200...299
-
+ 
 
 protocol HTTPDataDownloader {
     func httpData(from: URL) async throws -> Data
