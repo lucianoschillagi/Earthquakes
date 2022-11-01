@@ -53,6 +53,7 @@
 		A6351A9A28FDEF3600B0D5DA /* EarthquakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6351A9C28FDEF3600B0D5DA /* EarthquakesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesTests.swift; sourceTree = "<group>"; };
 		A6351AA328FDF04F00B0D5DA /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		A6A8B03D29103CA3001BBFCF /* Existential-and-Generic-Types.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Existential-and-Generic-Types.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A6C61A4F2908973400BEC9B3 /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
 		A6C61A512908A4CF00BEC9B3 /* QuakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeClient.swift; sourceTree = "<group>"; };
 		AA2F4EAF276BA585009837CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A6C61A4F2908973400BEC9B3 /* HTTPDataDownloader.swift */,
+				A6A8B03D29103CA3001BBFCF /* Existential-and-Generic-Types.playground */,
 				A6C61A512908A4CF00BEC9B3 /* QuakeClient.swift */,
 				A6351A8728FDE4D500B0D5DA /* QuakeError.swift */,
 				AA2F4EAF276BA585009837CD /* README.md */,

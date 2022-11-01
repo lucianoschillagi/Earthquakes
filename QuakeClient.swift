@@ -26,6 +26,7 @@ class QuakeClient {
     
     private let feedURL = URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson")!
     
+    // the keywork 'any´ converts the ´HTTPDataDownloader´ protocol into an Existential Type
     private let downloader: any HTTPDataDownloader
 
     init(downloader: any HTTPDataDownloader = URLSession.shared) {
