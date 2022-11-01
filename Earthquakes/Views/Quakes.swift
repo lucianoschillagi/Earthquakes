@@ -50,6 +50,7 @@ struct Quakes: View {
 }
 
 extension Quakes {
+    
     var title: String {
         if selectMode.isActive || selection.isEmpty {
             return "Earthquakes"

@@ -46,10 +46,10 @@ extension Quake: Decodable {
                   let detail = rawDetail
             else { throw QuakeError.missingData }
         
-        self.magnitude = magnitude
-             self.place = place
-             self.time = time
-             self.code = code
-             self.detail = detail
+         self.magnitude = magnitude
+         self.place = place
+         self.time = time
+         self.code = code
+         self.detail = detail
     }
 }
