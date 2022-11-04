@@ -8,7 +8,8 @@
 
 import Foundation
 
-class QuakeClient {
+// Although quakeCache is defined as a constant, the internal state of the cache object that it refers to can change. Making QuakeClient an actor protects the cache from simultaneous access from multiple threads.
+actor QuakeClient {
     
     private let quakeCache: NSCache<NSString, CacheEntryObject> = NSCache()
     
@@ -33,6 +34,37 @@ class QuakeClient {
 
     init(downloader: any HTTPDataDownloader = URLSession.shared) {
         self.downloader = downloader
+    }
+
+    
+    func quakeLocation(from url: URL) async throws -> QuakeLocation {
+        
+        // NOTE: this optional binding is crucial!
+        if let cached = quakeCache[url] {
+            switch cached {
+            case .ready(let location):
+                return location
+            case .inProgress(let task):
+                return try await task.value
+            }
+        }
+        
+        let task = Task<QuakeLocation, Error> {
+            let data = try await downloader.httpData(from: url)
+            let location = try decoder.decode(QuakeLocation.self, from: data)
+            return location
+        }
+        quakeCache[url] = .inProgress(task)
+        
+        do {
+            let location = try await task.value
+            quakeCache[url] = .ready(location)
+            return location
+        } catch {
+            quakeCache[url] = nil
+            throw error
+        }
+        
     }
 
 }
