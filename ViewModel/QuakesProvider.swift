@@ -8,6 +8,8 @@
 
 import Foundation
 
+// Marking the whole class with @MainActor makes methods of this class execute on the main thread.
+@MainActor
 class QuakesProvider: ObservableObject {
 
     @Published var quakes: [Quake] = [] // dinamic data, stores the data
