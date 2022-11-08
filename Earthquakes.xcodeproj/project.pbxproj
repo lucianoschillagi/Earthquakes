@@ -18,7 +18,7 @@
 		A6351A9D28FDEF3600B0D5DA /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6351A9C28FDEF3600B0D5DA /* EarthquakesTests.swift */; };
 		A63B6741291940BF002E4EE8 /* Quake+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B6740291940BF002E4EE8 /* Quake+Preview.swift */; };
 		A63B67432919414E002E4EE8 /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B67422919414E002E4EE8 /* QuakeDetail.swift */; };
-		A63B6745291A963E002E4EE8 /* QuakeDetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B6744291A963E002E4EE8 /* QuakeDetailMap.swift */; };
+		A63B6747291A979A002E4EE8 /* QuakeDetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B6746291A979A002E4EE8 /* QuakeDetailMap.swift */; };
 		A6A8B03E29129D9E001BBFCF /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6351AA328FDF04F00B0D5DA /* TestData.swift */; };
 		A6A8B04029129E18001BBFCF /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A8B03F29129E18001BBFCF /* TestDownloader.swift */; };
 		A6C61A502908973400BEC9B3 /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C61A4F2908973400BEC9B3 /* HTTPDataDownloader.swift */; };
@@ -65,7 +65,7 @@
 		A6351AA328FDF04F00B0D5DA /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		A63B6740291940BF002E4EE8 /* Quake+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Preview.swift"; sourceTree = "<group>"; };
 		A63B67422919414E002E4EE8 /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuakeDetail.swift; path = "Playgrounds/Existential-and-Generic-Types.playground/QuakeDetail.swift"; sourceTree = SOURCE_ROOT; };
-		A63B6744291A963E002E4EE8 /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuakeDetailMap.swift; path = "Playgrounds/Existential-and-Generic-Types.playground/QuakeDetailMap.swift"; sourceTree = SOURCE_ROOT; };
+		A63B6746291A979A002E4EE8 /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailMap.swift; sourceTree = SOURCE_ROOT; };
 		A6A8B03D29103CA3001BBFCF /* Existential-and-Generic-Types.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Existential-and-Generic-Types.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A6A8B03F29129E18001BBFCF /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = SOURCE_ROOT; };
 		A6C61A4F2908973400BEC9B3 /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		ADFCD5362630DA13008A14D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A63B6744291A963E002E4EE8 /* QuakeDetailMap.swift */,
+				A63B6746291A979A002E4EE8 /* QuakeDetailMap.swift */,
 				A63B67422919414E002E4EE8 /* QuakeDetail.swift */,
 				AD57B10126561FE1005183D0 /* Quakes.swift */,
 				ADDDB1802625242200241A73 /* QuakeRow.swift */,
@@ -370,7 +370,7 @@
 				AA988DD527E9016A004EA073 /* SelectButton.swift in Sources */,
 				A61BB42728FEAD3B00992D9A /* GeoJSON.swift in Sources */,
 				ADDDB1812625242200241A73 /* QuakeRow.swift in Sources */,
-				A63B6745291A963E002E4EE8 /* QuakeDetailMap.swift in Sources */,
+				A63B6747291A979A002E4EE8 /* QuakeDetailMap.swift in Sources */,
 				7CC62565273C2A9200F87758 /* Quake+Color.swift in Sources */,
 				AD43F1E626158A640068AABC /* EarthquakesApp.swift in Sources */,
 				A612A920291556E70025C128 /* CacheEntryObject.swift in Sources */,
