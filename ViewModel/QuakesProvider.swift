@@ -16,11 +16,12 @@ class QuakesProvider: ObservableObject {
     
     let client: QuakeClient // make the request
 
+    // MARK: -  Initializer
     init(client: QuakeClient = QuakeClient()) {
         self.client = client
     }
     
-    // MARK: Process the model
+    // MARK: -  Process the model
     func fetchQuakes() async throws {
         let latestQuakes = try await client.quakes
         self.quakes = latestQuakes
@@ -29,5 +30,10 @@ class QuakesProvider: ObservableObject {
     func deleteQuakes(atOffsets offsets: IndexSet) {
         quakes.remove(atOffsets: offsets)
     }
+    
+    func location(for quake: Quake) async throws -> QuakeLocation {
+        return try await client.quakeLocation(from: quake.detail)
+    }
+    
 }
 
